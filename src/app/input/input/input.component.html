@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <div class="wrapper-field">
+    <ng-content select="mat-form-field"></ng-content>
+    <ng-content select="mat-radio-group"></ng-content>
+    <ng-content select="mat-checkbox"></ng-content>
+  </div>
+  <div class="wrapper-error">
+    <ng-content select="app-input-error"></ng-content>
+    <div class="errors-type">
+      <ng-content select="app-server-error"></ng-content>
+    </div>
+  </div>
+</div>
+
+

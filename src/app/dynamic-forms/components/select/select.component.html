@@ -1,0 +1,13 @@
+<div class="form-name">
+  <input-wrap>
+    <mat-form-field class="demo-full-width margin-top" [formGroup]="group">
+      <mat-select [placeholder]="field.label" [formControlName]="field.name">
+        <mat-option *ngFor="let item of field.options" [value]="item">{{item}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <app-input-error>
+    </app-input-error>
+    <app-server-error [error]="serverError" [key]="['contacts', 'address', 'street']"></app-server-error>
+  </input-wrap>
+</div>
+

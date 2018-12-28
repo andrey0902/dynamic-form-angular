@@ -1,0 +1,12 @@
+<div class="form-name" [formGroup]="group">
+  <input-wrap>
+    <mat-form-field>
+      <input matInput autocomplete="off" [placeholder]="field.label"
+             [formControlName]="field.name" [type]="field.inputType || 'text'"
+      >
+    </mat-form-field>
+    <app-input-error>
+    </app-input-error>
+    <app-server-error [error]="serverError" [key]="['contacts', 'address', 'street']"></app-server-error>
+  </input-wrap>
+</div>

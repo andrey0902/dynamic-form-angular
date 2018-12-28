@@ -1,0 +1,6 @@
+<button type="button" (click)="addControl()">Add control</button>
+  <div *ngFor="let item of control.controls; let i = index;">
+    <dynamic-form [fields]="field.fields" [group]="item" >
+    </dynamic-form>
+    <button type="button" (click)="deleteItem(i)">remove control</button>
+  </div>

@@ -1,0 +1,13 @@
+<form class="dynamic-form" [formGroup]="form" (submit)="onSubmit($event)">
+  <dynamic-form [fields]="fields" [group]="form" >
+  </dynamic-form>
+
+  <div class="actions">
+    <ng-content selector=".actions">
+
+    </ng-content>
+  </div>
+</form>
+
+
+

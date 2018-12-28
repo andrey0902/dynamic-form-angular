@@ -1,0 +1,15 @@
+<div class="form-name" [formGroup]="group">
+  <input-wrap>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" [formControlName]="field.name" [placeholder]="field.label">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-hint></mat-hint>
+    </mat-form-field>
+    <app-input-error>
+    </app-input-error>
+    <app-server-error [error]="serverError" [key]="['contacts', 'address', 'street']"></app-server-error>
+  </input-wrap>
+</div>
+
+

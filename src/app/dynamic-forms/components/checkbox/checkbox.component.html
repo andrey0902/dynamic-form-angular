@@ -1,0 +1,10 @@
+<div class="form-name">
+  <input-wrap [formGroup]="group">
+      <mat-checkbox [formControlName]="field.name">{{field.label}}</mat-checkbox>
+    <app-input-error>
+    </app-input-error>
+    <app-server-error [error]="serverError" [key]="['contacts', 'address', 'street']"></app-server-error>
+  </input-wrap>
+</div>
+
+
